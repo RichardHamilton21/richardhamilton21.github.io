@@ -28,3 +28,7 @@ a {
   padding: 4px;
   color: white;
 }
+
+body {
+    background-color: rgba(255, 218, 185, 0.795);
+}
