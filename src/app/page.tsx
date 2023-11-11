@@ -1,113 +1,108 @@
 import Image from "next/image";
+import ProfilePic from "./assets/profile-pic.jpg";
+import styles from "./styles/page.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <h1>Patty Hamilton for 12th District State Representative</h1>
+      <div className={styles.profilePicContainer}>
+        <Image src={ProfilePic} alt="" />
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <h2>Who I am</h2>
+      <p>
+        I am Patty Hamilton, and I am a Republican running in upcoming
+        Republican Primary which will take place on March 19, 2024, to become
+        the State Representative for the 12th District, and to serve in the Ohio
+        House of Representatives. My district covers all of Madison County,
+        Pickaway County, and lower Franklin County.
+      </p>
+      <p>
+        I am currently a landlord of 10 high quality rental houses of which my
+        husband and I, along with our 3 sons, have renovated.
+      </p>
+      <p>
+        I am member of the Pickaway County Republican Central Committee, for the
+        past two years, and am the secretary. I am a member of the America First
+        Now (AFN) group, Ohio Farm Bureau member, and the Pickaway County
+        Agricultural Society. I am a 4 year member of the Soldier’s Monumental
+        Association (SMA) and am currently serving as the Treasurer and
+        Corresponding Secretary. I am very knowledgeable on various guns, have
+        my Concealed Carry Weapon (CCW) permit, and am an NRA member. I am a
+        lifetime member of the Veterans of Foreign Wars (VFW) and a member of
+        the Pickaway County Sportsman Club.
+      </p>
+      <h2>Biographical Summary</h2>
+      <h3>
+        I served for 30 years in the Army Reserves as a Military Police Officer
+      </h3>
+      <p>
+        I am a retired Lieutenant Colonel with Combat tours of duty in both Iraq
+        and Afghanistan. In Iraq during the Operation Iraqi Freedom (OIF), as
+        the Theater Detainee Reporting Center Chief. In Afghanistan during
+        Operation Enduring Freedom (OEF), as the Provost Marshal for Kandahar
+        Airfield and Customs Clearance AOfficer in Charge of all of Afghanistan.
+        I worked one year at the Pentagon, as the National Detainee Reporting
+        Center Operations Officer. My last assignment was two years as the
+        Battalion Commander of a Military Police Training Battalion. While in
+        the Army, I earned the Legion of Merit Medal, Bronze Star Medal, Defense
+        Meritorious Service Medal, Meritorious Service Medal and many other
+        awards and decorations.
+      </p>
+      <h3>My Military Training Consists of </h3>
+      <p>
+        Basic Combat Training, Military Police School, Officers Basic Course,
+        Airlift Planners Course, Air Movement Course, Hazardous Materials,
+        Adjutant General School, Officers Advanced Course, Mobilization Planners
+        Course, Hand-to-hand Combat Training, Drug Demand Reduction Course,
+        Commander’s Course, Army Master Fitness Course, Combined Arms and
+        Services Staff School (CAS3), Command and General Staff College (CGSS) /
+        Intermediate Level Education (ILE).
+      </p>
+      <h3>
+        I had many different civilian jobs because my husband was an Active duty
+        Command Sergeant Major{" "}
+      </h3>
+      <p>
+        for over 29 years. Therefore, I changed civilian jobs every time we
+        moved from state to state and to different countries. Some of my work
+        experience includes: being a Community Based Outpatient Clinic (CBOC)
+        Manager at the Department of Veterans Affairs in Lancaster and as the
+        Transition Patient Advocate for OIF/OEF Veterans at the Chillicothe VA
+        Hospital, a school teacher in NC, SC, GA, a tax preparer, a nursing home
+        certified medical technician, a Law Office legal assistant, a Police
+        Officer in the Marshall Islands, an exchange detective for Army Air
+        Force Exchange Service (AFFES), an Inventory Management Auditor, a
+        Raytheon accounting collections Manager.
+      </p>
+      <h3>My civilian education consists of </h3>
+      <p>
+        a Master’s of Science Degree in Education from Walden University, MN; a
+        Bachelor of Science degree from Central Missouri State University, in
+        Criminal Justice; a Teaching Certificate from Armstrong Atlantic State
+        University, GA.
+      </p>
+      <h2>What I stand for and why I am running:</h2>
+      <ul>
+        <li>Always maintain the highest level of integrity </li>
+        <li>Duty to uphold our constitutional freedoms</li>
+        <li>
+          Ensure Parent’s Rights to Protect their Children and Defend Biological
+          Girls in High School Sports
+        </li>
+        <li>
+          Stand for Rights of Farmers and Small Businesses while keeping
+          efficient, honest government
+        </li>
+        <li>Lower Taxes and ensure Ohio is energy Independent</li>
+      </ul>
+      <p>
+        I am running because I believe the people of District 12 need a person
+        who will listen and uphold their values along with being present in the
+        counties represented in the district. Ohioans deserve to be informed by
+        their representative on a regular basis of the legislation and share
+        their thoughts on the important legislation for their communities.
+      </p>
+    </>
   );
 }

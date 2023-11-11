@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  background: #a80101;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.innerContainer {
+  margin: 25px;
+  width: 1280px;
+}
