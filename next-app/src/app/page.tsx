@@ -9,6 +9,15 @@ export default function Home() {
       <div className={styles.profilePicContainer}>
         <Image src={ProfilePic} alt="" />
       </div>
+      <div className={styles.donateContainer}>
+        <a
+          href="https://politics.raisethemoney.com/en/phamilton"
+          target="_blank"
+        >
+          DONATE
+        </a>
+      </div>
+
       <h2>Who I am</h2>
       <p>
         I am Patty Hamilton, and I am a Republican running in upcoming

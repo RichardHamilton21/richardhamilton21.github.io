@@ -1,0 +1,16 @@
+.profilePicContainer {
+  display: flex;
+  justify-content: center;
+}
+.donateContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.donateContainer a {
+  border-radius: 5px;
+  padding: 10px 25px;
+  background: #a80101;
+  font-size: 30px;
+  color: white;
+}
