@@ -16,6 +16,18 @@ export default function Home() {
         >
           DONATE
         </a>
+        <a
+          href="/letter-for-state-rep-campaign.pdf"
+          target="_blank"
+        >
+          NEWSLETTER
+        </a>
+        <a
+          href="https://www.circlevilleherald.com/news/hamilton-announces-candidacy-for-12th-house-district/article_f8c7e22a-7fc7-11ee-a40f-9b0486219a2d.html"
+          target="_blank"
+        >
+          ANNOUNCEMENT
+        </a>
       </div>
 
       <h2>Who I am</h2>
